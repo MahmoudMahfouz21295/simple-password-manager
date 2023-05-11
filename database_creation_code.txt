@@ -1,0 +1,20 @@
+CREATE DATABASE password_manager;
+
+USE password_manager;
+
+CREATE TABLE accounts(
+    id INT NOT NULL AUTO_INCREMENT,
+    application VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    username VARCHAR(255),
+    url VARCHAR(255),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO accounts(application,email,password,username,url) VALUES(
+    'APP NAME','example@email.com','P0w3rFu1_P@55wrD','optional_username','https://optional.url.com/'
+);
+
+SELECT * FROM accounts;
+
