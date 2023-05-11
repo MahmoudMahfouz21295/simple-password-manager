@@ -61,7 +61,7 @@ def delete_menu():
 
 
 def main_menu():
-    print('# Select one chois')
+    print('# Select one choice')
     print(' - Create New Password (1)')
     print(' - Show My Passwords (2)')
     print(' - Delete My Password (3)')
